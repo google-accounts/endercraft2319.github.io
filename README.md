@@ -1,2 +1,2 @@
 # endercraft2319.github.io
-I post mostly mcpe, I'll try to update things but check the mcpe version
+Endercraft2319's cydia repo. This repo won't have much so don't expect anything big. It will include some small projects ot themes. My twitter- @Endercraft2319
