@@ -40,17 +40,14 @@
 
 @font-face {
 	font-family: 'minecraftfont';
-    
-    	src: url('http://fontsforweb.com/public/fonts/1412/minecraftfont.eot');
-	src: local('minecraftfont'), url('http://fontsforweb.com/public/fonts/1412/minecraftfont.ttf') format('truetype');
-    }
-body.cke_editable p {
-	font-family: 'minecraftfont';
-    font-size: 40px;
+	src: url('../minecraftfont.eot');
+	src: local('minecraftfont'), url('../minecraftfont.woff') format('woff'), url('../minecraftfont.ttf') format('truetype');
 }
+
 .fontsforweb_fontid_1412 {
 	font-family: 'minecraftfont' !important;
 }
+
 
 /* Font downloaded from FontsForWeb.com */
 
