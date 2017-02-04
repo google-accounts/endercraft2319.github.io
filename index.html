@@ -57,23 +57,23 @@ var Mobile = false;
 </script>
 
   <div class="button" onclick="cursor()" id="cursor">
-  <img id="cursorimg" style="height: 46px; width: 46px; margin-top: 2%;"src="http://endercraft2319.weebly.com/files/theme/buttoncursor.png" alt="cursor" />
+  <img id="cursorimg" style="height: 46px; width: 46px; margin-top: 2%;"src="../assets/buttoncursor.png" alt="cursor" />
 </div>
 </div>
 
   <div class="button" onclick="press()" id="twit">
-  <img id="twitimage" style="height: 50px; width: 50px; margin-top: 2%;"src="http://endercraft2319.weebly.com/files/theme/twitter.png" alt="twitter" />
+  <img id="twitimage" style="height: 50px; width: 50px; margin-top: 2%;"src="../assets/twitter.png" alt="twitter" />
 </div>
 
   <div class="mobiletoggle" id="">
-  <img id="mobswitch" onclick="mobileflip()" style="height: 28px; width: 57px; margin-top: 2%; float: left;"src="http://endercraft2319.weebly.com/files/theme/toggleoff.png" alt="toggle" />
+  <img id="mobswitch" onclick="mobileflip()" style="height: 28px; width: 57px; margin-top: 2%; float: left;"src="../assets/toggleoff.png" alt="toggle" />
   <p style="color: white; font-size:15px; float: right;" id="titletxt" >&nbsp;&nbsp;Mobile</p>
 </div>
 
   <!-- BUTTONS -->
 <script>
 function press() {
-  $('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/buttonhover.css"]').remove();
+  $('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
   document.getElementById("twit").style.backgroundColor = "#716567";
   document.getElementById("twit").style.borderTop = "4px solid #565656";
   document.getElementById("twit").style.borderBottom = "4px solid #AAA";
@@ -81,7 +81,7 @@ function press() {
   document.getElementById("twit").style.borderLeft = "4px solid #565656";
   document.getElementById("twit").style.color = "#FFFFA0";
   
-  var audio = new Audio('http://endercraft2319.weebly.com/files/theme/click.mp3');
+  var audio = new Audio('../assets/click.mp3');
   audio.play();
   setTimeout(unpress, 200);
 }
@@ -94,21 +94,21 @@ function unpress() {
   document.getElementById("twit").style.borderLeft = "4px solid #AAA";
   document.getElementById("twit").style.borderRight = "4px solid #565656";
   document.getElementById("twit").style.color = "white";
-  $('head').append('<link href="http://endercraft2319.weebly.com/files/theme/buttonhover.css" rel="stylesheet" />');
+  $('head').append('<link href="../assets/buttonhover.css" rel="stylesheet" />');
   setTimeout(function() { location.assign("http://www.twitter.com/endercraft2319"); }, 200);
   if(Mobile) {
-$('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/buttonhover.css"]').remove();
+$('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
 }
 
   //if it's blocked...
-  setTimeout(function() { document.getElementById("twitimage").src = "http://endercraft2319.weebly.com/files/theme/missing.gif"; document.getElementById("twitimage").style.height = "48px"; document.getElementById("twitimage").style.marginTop = "0%"; document.getElementById("popblock").style.visibility = "visible"; document.getElementById("overlay").style.visibility = "visible"; }, 4000);
+  setTimeout(function() { document.getElementById("twitimage").src = "../assets/missing.gif"; document.getElementById("twitimage").style.height = "48px"; document.getElementById("twitimage").style.marginTop = "0%"; document.getElementById("popblock").style.visibility = "visible"; document.getElementById("overlay").style.visibility = "visible"; }, 4000);
   //using assign bc code below is blocked by most browsers bc they didnt detect user action after delay ):
  //setTimeout(function() { window.open("http://www.twitter.com/endercraft2319"); }, 200);
 }
 </script>
 <script>
 function cursor() {
-  $('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/buttonhover.css"]').remove();
+  $('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
   document.getElementById("cursor").style.backgroundColor = "#716567";
   document.getElementById("cursor").style.borderTop = "4px solid #565656";
   document.getElementById("cursor").style.borderBottom = "4px solid #AAA";
@@ -116,7 +116,7 @@ function cursor() {
   document.getElementById("cursor").style.borderLeft = "4px solid #565656";
   document.getElementById("cursor").style.color = "#FFFFA0";
   
-  var audio = new Audio('http://endercraft2319.weebly.com/files/theme/click.mp3');
+  var audio = new Audio('../assets/click.mp3');
   audio.play();
   setTimeout(changecursor, 200);
 }
@@ -129,9 +129,9 @@ function changecursor() {
   document.getElementById("cursor").style.borderLeft = "4px solid #AAA";
   document.getElementById("cursor").style.borderRight = "4px solid #565656";
   document.getElementById("cursor").style.color = "white";
-  $('head').append('<link href="http://endercraft2319.weebly.com/files/theme/buttonhover.css" rel="stylesheet" />');
+  $('head').append('<link href="../assets/buttonhover.css" rel="stylesheet" />');
   if(Mobile) {
-$('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/buttonhover.css"]').remove();
+$('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
 }
 
   setTimeout(mousechange, 200);
@@ -141,11 +141,11 @@ $('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/butt
 <script>
 function mousechange() {
 cur++;
-if (cur == 5) { cur = 1; document.body.style.cursor = 'url(http://endercraft2319.weebly.com/files/theme/cursor.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/buttoncursor.png"; }
+if (cur == 5) { cur = 1; document.body.style.cursor = 'url(../assets/cursor.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/buttoncursor.png"; }
 //5=1 :P
-if (cur == 2) { document.body.style.cursor = 'url(http://endercraft2319.weebly.com/files/theme/cursor2.cur), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/diamond_sword.png";}
-if (cur == 3) { document.body.style.cursor = 'url(http://endercraft2319.weebly.com/files/theme/arrow.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/arrowcursorbutton.png";}
-if (cur == 4) { document.body.style.cursor = ''; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/normcursor.png";}
+if (cur == 2) { document.body.style.cursor = 'url(../assets/cursor2.cur), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/diamond_sword.png";}
+if (cur == 3) { document.body.style.cursor = 'url(../assets/arrow.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/arrowcursorbutton.png";}
+if (cur == 4) { document.body.style.cursor = ''; document.getElementById("cursorimg").src = "../assets/normcursor.png";}
 //alert(cur)
 }
 </script>
@@ -158,7 +158,7 @@ mobilemodifier()
   </script>
   <script>
 function mobileflip() {
-  var audio = new Audio('http://endercraft2319.weebly.com/files/theme/click.mp3');
+  var audio = new Audio('../assets/click.mp3');
   audio.play();
 Mobile = !Mobile;
 //alert(Mobile)
@@ -167,13 +167,13 @@ mobilemodifier()
   </script>
   <script>
 function mobilemodifier() {
-if (Mobile) {$('link[rel=stylesheet][href*="http://endercraft2319.weebly.com/files/theme/buttonhover.css"]').remove();
+if (Mobile) {$('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
 document.getElementById("cursor").style.visibility = "hidden";
-document.getElementById("mobswitch").src = "http://endercraft2319.weebly.com/files/theme/toggleon.png";
+document.getElementById("mobswitch").src = "../assets/toggleon.png";
 }
-else {$('head').append('<link href="http://endercraft2319.weebly.com/files/theme/buttonhover.css" rel="stylesheet" />');
+else {$('head').append('<link href="../assets/buttonhover.css" rel="stylesheet" />');
 document.getElementById("cursor").style.visibility = "visible";
-document.getElementById("mobswitch").src = "http://endercraft2319.weebly.com/files/theme/toggleoff.png";
+document.getElementById("mobswitch").src = "http:../assets/toggleoff.png";
 }
 }
   </script>
