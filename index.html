@@ -141,10 +141,10 @@ $('link[rel=stylesheet][href*="../assets/buttonhover.css"]').remove();
 <script>
 function mousechange() {
 cur++;
-if (cur == 5) { cur = 1; document.body.style.cursor = 'url(../assets/cursor.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/buttoncursor.png"; }
+if (cur == 5) { cur = 1; document.body.style.cursor = 'url(../assets/cursor.png), not-allowed'; document.getElementById("cursorimg").src = "../assets/buttoncursor.png"; }
 //5=1 :P
-if (cur == 2) { document.body.style.cursor = 'url(../assets/cursor2.cur), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/diamond_sword.png";}
-if (cur == 3) { document.body.style.cursor = 'url(../assets/arrow.png), not-allowed'; document.getElementById("cursorimg").src = "http://endercraft2319.weebly.com/files/theme/arrowcursorbutton.png";}
+if (cur == 2) { document.body.style.cursor = 'url(../assets/cursor2.cur), not-allowed'; document.getElementById("cursorimg").src = "../assets/diamond_sword.png";}
+if (cur == 3) { document.body.style.cursor = 'url(../assets/arrow.png), not-allowed'; document.getElementById("cursorimg").src = "../assets/arrowcursorbutton.png";}
 if (cur == 4) { document.body.style.cursor = ''; document.getElementById("cursorimg").src = "../assets/normcursor.png";}
 //alert(cur)
 }
