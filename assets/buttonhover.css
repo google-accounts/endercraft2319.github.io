@@ -1,0 +1,8 @@
+.button:hover {
+  border-bottom: 4px solid #59639A !important;
+  border-right: 4px solid #59639A !important;
+  border-left: 4px solid #BDC6FF !important;
+  border-top: 4px solid #BDC6FF !important;
+  background-color: #9EA8ED !important;
+  color: #FFFFA0 !important;
+}

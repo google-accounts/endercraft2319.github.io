@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+
+
+
+
+<style data-cke-temp="1">html{cursor:text;*cursor:auto}img,input,textarea{cursor:default}</style>
+<link type="text/css" rel="stylesheet" href="http://endercraft2319.weebly.com/files/theme/buttonhover.css">
+<style data-cke-temp="1">.cke_editable{cursor:text}.cke_editable img,.cke_editable input,.cke_editable textarea{cursor:default}</style>
+</head>
+
+<body style="cursor:url(http://endercraft2319.weebly.com/files/theme/cursor.png),auto;" contenteditable="false" class='cke_editable cke_editable_themed cke_contents_ltr  wsite-theme-light' spellcheck="false">
+  <div id="overlay"></div>
+  <div id="popblock" style="height: 60%; width:60%; background-color:#948580; border-top: 4px solid #AAA; border-left: 4px solid #AAA; border-bottom: 4px solid #565656; border-right: 4px solid #565656;">
+<p style="text-align: center; color: #FFFF00;font-size: 4vh ;font-family:'minecraftfont';text-shadow:3px 3px #3F3F00;">Are you lost?</p>
+    <div class="button404" id="redirect" onclick="press()" style=" position: fixed;margin: auto;top: 45%;left: 0;right: 0;bottom: 0;z-index: 9999;">homepage</div>
+ <img style="height: 25%; position: fixed;margin: auto;top: 0;left: 0;right: 0;bottom: 20%;z-index: 9999;"src="http://endercraft2319.weebly.com/files/theme/missing.gif" alt="ghost" />
+ <p style="position: fixed;margin: auto;top: 60%;left: 0;right: 0;z-index: 9999;text-align: center; color: white;font-size: 4vh ;font-family:'minecraftfont';">ERROR 404</p>
+ </div>
+<div id="wrapperHeader" style="position: absolute; z-index: -3; top: 0; right: 0; width:##px ; height: ##px;">
+  <div id="header">
+  <img src="http://endercraft2319.weebly.com/files/theme/mcpe-header.png" alt="header" />
+</div> 
+</div>
+
+<div id="wrapperHeadertxt" style="position: absolute; z-index: -2; top: 0px; right: 0; width:##px ; height: ##px;">
+  <div id="headertxt">
+  <img src="http://endercraft2319.weebly.com/files/theme/title.png" alt="headertxt" />
+ </div> 
+</div>
+
+<div id="wrapperHeadersplash" style="position: absolute; z-index: -1; top: 0; right: 0; width:##px ; height: ##px;">
+  <div id="headersplash">
+<div class="tilt">
+    <div id="status" class="pop">The&nbsp;Website!</div>
+<!-- I had to use "&nbsp;" instead of a simple space because the CSS will put a part of it on a separate line -->
+</div>
+</div> 
+</div>
+
+  <!-- BUTTONS -->
+<script>
+function press() {
+  document.getElementById("redirect").style.backgroundColor = "#716567";
+  document.getElementById("redirect").style.borderTop = "4px solid #565656";
+  document.getElementById("redirect").style.borderBottom = "4px solid #AAA";
+  document.getElementById("redirect").style.borderRight = "4px solid #AAA";
+  document.getElementById("redirect").style.borderLeft = "4px solid #565656";
+  document.getElementById("redirect").style.color = "#FFFFA0";
+  
+  var audio = new Audio('http://endercraft2319.weebly.com/files/theme/click.mp3');
+  audio.play();
+  setTimeout(unpress, 200);
+}
+</script>
+<script>
+function unpress() {
+  document.getElementById("redirect").style.backgroundColor = "#948580";
+  document.getElementById("redirect").style.borderBottom = "4px solid #565656";
+  document.getElementById("redirect").style.borderTop = "4px solid #AAA";
+  document.getElementById("redirect").style.borderLeft = "4px solid #AAA";
+  document.getElementById("redirect").style.borderRight = "4px solid #565656";
+  document.getElementById("redirect").style.color = "white";
+  setTimeout(function() { location.assign("http://www.endercraft2319.weebly.com"); }, 200);
+
+
+}
+</script>
+  <!-- nothing -->
+<div id="wrapper">
+
+	<div id="navigation">
+    <div id="navigation-wrap">
+  	 	<div id="nav">
+	      <div class="sitename">{logo}</div>
+				{menu}
+			</div>
+   	 	<div id="navmobile">{menu}</div>
+    </div>
+		<label id="mobile-close" class="hamburger" for="mobile-input"></label>
+	</div>
+
+  <div id="main">
+
+    <div id="mobile-top">
+			<label id="mobile-open" class="hamburger" for="mobile-input"></label>
+      <div class="sitename">{logo}</div>      
+    </div>
+
+  	<div id="content-wrapper">
+  		<div id="content">{content}</div>
+  	</div>
+    
+
+  </div>
+	
+</div>
+<script type="text/javascript" src="/files/theme/plugins.js"></script>
+<script type="text/javascript" src="/files/theme/custom.js"></script>
+<script type="text/javascript" src="/files/theme/mobile.js"></script>
+<div style='padding: 0px; width:100%; text-align:center; visibility:hidden;'>{footer}</div>
+</body>
+</html>
