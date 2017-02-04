@@ -50,6 +50,9 @@
 
 body {
 font-family: 'minecraftfont';
+	   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 /* Font downloaded from FontsForWeb.com */
