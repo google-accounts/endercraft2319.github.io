@@ -1,4 +1,14 @@
 
+
+
+::selection {
+  background: #72f7ff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #72f7ff; /* Gecko Browsers */
+}
+
+
 .mobiletoggle {
   position: fixed;
   bottom: 5px;
