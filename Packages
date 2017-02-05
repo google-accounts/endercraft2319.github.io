@@ -5,9 +5,7 @@ Maintainer: Endercraft2319 <endercraft2319@gmail.com>
 Depends: firmware (>= 7.0), com.anemonetheming.anemone
 Filename: debs/Sliver.deb
 Size: 3268
-MD5sum: 76B5A55CB94EC47E5844148F4F9D4006
-SHA1: CCF8DC72FB76559BE1E4D8593FB9B06087179C80
-SHA256: 46647AD90FD11A866F3474F5934B2BEB3D20223624ABF928AD2FB03F3FA13769
+MD5sum: 76b5a55cb94ec47e5844148f4f9d4006
 Section: Themes
 Description: Your dock blur shrunk down to a sliver
 Author: Endercraft2319 <endercraft2319@gmail.com>
